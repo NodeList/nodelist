@@ -45,3 +45,10 @@ typeof window; // object
 ## 闭包
 
 闭包是指有权访问另一个函数作用域中变量的函数。当在函数内部定义了函数时，就定义了闭包，内部函数可以引用外部函数的变量，从而导致垃圾回收机制不能回收当前变量，这会导致内存泄漏。
+应用： setTimeOut(); 回调； 封装变量； 为节点循环绑定 click 事件； 收敛权限
+
+## cookies, sessionStorage, localStorage 的区别
+
+-   共同点：都是保存在浏览器端，且是同源的
+-   不同点：
+    -   cookie 在浏览器与服务器之间来回传递；sessionStorage 和 localStorage 不会自动将数据发送给服务器，仅在本地保存。cookie
