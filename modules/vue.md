@@ -33,3 +33,5 @@ Model：模型是指代表真实状态内容的领域模型（面向对象），
 view：就像在 MVC 和 MVP 模式中一样，视图是用户在屏幕上看到的结构、布局和外观（UI）
 viewmodel：视图模型是暴露公共属性和命令的视图的抽象
 采用双向绑定，view 的变动，自动反映在 ViewModel。
+
+## computed 与 watch 的区别
