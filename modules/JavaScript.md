@@ -6,25 +6,9 @@ JavaScript 有以下三部分组成：
 > -   文档对象模型(DOM)：DOM 提供访问和操作网页内容的方法和接口
 > -   浏览器对象模型(BOM)：BOM 提供与浏览器交互的方法和接口
 
-## ECMAScript
+## **ECMAScript**
 
 > 语法 类型 语句 关键字 保留字 操作符 对象
-
-### 数据类型
-
-#### 基本数据类型
-
-`Undefined` `Null` `Boolean` `Number` `String` `Symbol`
-
-#### 引用类型
-
-## 文档对象模型(DOM)
-
-> DOM!级 DOM2 级 DOM3 级
-
-## 浏览器对象模型(BOM)
-
-> window 对象 location 对象 navigator 对象 screen 对象 history 对象
 
 ## 数据类型
 
@@ -79,7 +63,19 @@ typeof window; // object
 -   不同点：
     -   cookie 数据始终在同源的 http 请求中携带，即 cookie 在浏览器与服务器之间来回传递；sessionStorage 和 localStorage 不会自动将数据发送给服务器，仅在本地保存。cookie 还有 路径(path)的概念，可以限制 cookie 只属于某个路径下。
     -   存储大小限制不同：cookie 数据大小不能超过 4k，因为每次 http 请求都会携带 cookie，因此 cookie 适合存很小的数据；sessionStorage 和 localStorage 也有大小限制，但可以达到 5M 或更大。
-    -   数据有效期不同：cookie： 若设置有效时间，则在有效时间内有效（是否关闭浏览器），否则关闭浏览器自动清除；sessionStorage：仅在当前浏览器窗口关闭之前有效；localStorage：始终有效，窗口或浏览器关闭也一直保存，因此用作持久数据。
+    -   数据有效期不同：cookie： 若设置有效时间，则在有效时间内有效（不管是否关闭浏览器），否则关闭浏览器自动清除；sessionStorage：仅在当前浏览器窗口关闭之前有效；localStorage：始终有效，窗口或浏览器关闭也一直保存，因此用作持久数据。
     -   作用域不同：cookie 与 localStorage 在所有同源窗口中都是共享的；sessionStorage 不在不同的浏览器窗口中共享。
     -   web Storage 支持事件通知机制，可以将事件更新的通知发送给监听者。
     -   web Storage 的 api 接口使用更方便。
+
+---
+
+## 文档对象模型(DOM)
+
+> DOM!级 DOM2 级 DOM3 级
+
+---
+
+## 浏览器对象模型(BOM)
+
+> window 对象 location 对象 navigator 对象 screen 对象 history 对象
