@@ -34,6 +34,7 @@
                 arr.push(max1 - max2);
             }
             console.log(arr);
+            // 需要对递归方法进行递归
             return max(arr);
         }
     }
